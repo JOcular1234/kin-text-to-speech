@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom dark mode support */
+html.dark {
+  background-color: #111827;
+  color-scheme: dark;
+}
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav, footer {
+  transition: background-color 0.3s, color 0.3s;
+}
