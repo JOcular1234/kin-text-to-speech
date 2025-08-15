@@ -1,6 +1,6 @@
 import React from "react";
 import { FaSun, FaMoon } from "react-icons/fa";
-import {Link} from "next/link";
+import Link from "next/link";
 
 export default function NavBar({ darkMode, toggleDarkMode }) {
   return (
