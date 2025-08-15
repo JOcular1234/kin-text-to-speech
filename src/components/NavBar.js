@@ -1,14 +1,13 @@
 import React from "react";
 import { FaSun, FaMoon } from "react-icons/fa";
+import {Link} from "next/link";
 
 export default function NavBar({ darkMode, toggleDarkMode }) {
   return (
     <nav className={`w-full flex items-center justify-between px-6 py-4 shadow-md ${darkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'}`}>
       <div className="font-bold text-xl tracking-wide">Kinvisuals</div>
       <div className="flex items-center gap-6">
-        <a href="/" className="hover:underline">Home</a>
-        <a href="#features" className="hover:underline">Features</a>
-        <a href="#about" className="hover:underline">About</a>
+        <Link href="/" className="hover:underline">Home</Link>
         <button
           onClick={toggleDarkMode}
           aria-label="Toggle dark mode"
